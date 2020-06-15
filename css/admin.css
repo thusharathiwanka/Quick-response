@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.prfileconta {
+  height: 700px;
+  width: 600px;
+  background-color: black;
+  margin-top: -150px;
+  opacity: 0.2;
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+}
+h1 {
+  font-size: 100px;
+}
+.profileim {
+  height: 100px;
+  margin-left: 320px;
+  transform: translateY(-750%);
+  position: relative;
+}
+.name {
+  margin-left: 301px;
+  transform: translateY(-1400%);
+  font-size: 40px;
+  position: relative;
+}
+.email {
+  margin-left: 100px;
+  margin-left: 301px;
+  transform: translateY(-1300%);
+  font-size: 40px;
+  position: relative;
+}
+.phone {
+  margin-left: 100px;
+  margin-left: 230px;
+  transform: translateY(-1200%);
+  font-size: 40px;
+  position: relative;
+  margin-bottom: -1200px;
+}
+.inbox {
+  width: 800px;
+  height: 400px;
+  float: right;
+  transform: translateY(15%);
+  margin-right: 100px;
+  position: relative;
+}
+.send {
+  width: 800px;
+  height: 400px;
+  float: right;
+  transform: translateY(15%);
+  margin-right: 100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.error {
+  width: 800px;
+  height: 400px;
+  float: right;
+  transform: translateY(15%);
+  margin-right: 100px;
+  position: relative;
+  margin-top: -90px;
+  margin-bottom: 200px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*Calender*/
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.month {
+  padding: 70px 25px;
+  width: 30%;
+  margin-left: 70px;
+  background: #2d5986;
+  text-align: center;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+.weekdays {
+  margin: 0;
+  margin-left: 70px;
+  width: 30%;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+.days {
+  margin-left: 70px;
+  width: 30%;
+  margin-top: -5px;
+  padding: 10px 0;
+  background: #eee;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+.days li .active {
+  padding: 5px;
+  background: #2d5986;
+  color: white !important;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
+}
+.footbutt {
+  float: right;
+  margin-top: 40px;
+  margin-right: 10px;
+}

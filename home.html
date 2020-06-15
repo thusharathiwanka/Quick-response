@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+  </head>
+  <body>
+    <div class="style2">
+      <img src="12.png" width="200px" height="200px" class="style3" />
+    </div>
+    <h1 class="style1">Online Help-Desk</h1>
+    <div class="navbar">
+      <a href="#home">Home</a>
+
+      <div class="drpdwn">
+        <button class="drpbtn">
+          Facilities
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drpdwn-cont">
+          <a href="#">Bussiness</a>
+          <a href="#">Information Technology</a>
+          <a href="#">Digital Technology</a>
+        </div>
+      </div>
+
+      <a href="#account">Account</a>
+
+      <div class="drpdwn">
+        <button class="drpbtn">
+          Resource
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drpdwn-cont">
+          <a href="#">Bussiness</a>
+          <a href="#">Information Technology</a>
+          <a href="#">Digital Technology</a>
+        </div>
+      </div>
+
+      <a href="#about us">About Us</a>
+    </div>
+
+    <div class="textcont">
+      <h1 class="welcometext" style="text-align: center">Welcome !</h1>
+        <p>
+          Quick Response (Pvt) Ltd  is a Consultancy firm situated at Malabe. QR is a firm where the clients can find solutions for their business queries. To make this service more effective and time preserving we have developed our own online help desk where the clients can log into the web site from anywhere in the world and be beneficial of our services.<br>
+
+          We aim to make sure that our clients’ needs are met from three important areas. The areas we cover under our firm would be,
+          <ul>
+            <li>Information Technology Consultancy</li>
+            <li>Business Organization Consultancy</li>
+            <li>Digital Technology consultancy</li>
+          </ul>
+          Information technology consultancy – This service will be provided to the businessmen and entrepreneurs who are involved with information technology. All the solutions to the queries will be met with the understanding of the newest trends of the IT world. <br><br>
+          
+          Business Organization consultancy – This service will be provided to the businessmen and entrepreneurs who have queries regarding structural errors, management skills, business strategies, interpersonal skills and many more. <br><br>
+            
+          Digital technology consultancy – This service is about the incorporation of the newest technologies to the organization. We aim to guide our clients and give the fullest knowledge of newest technologies so our clients can have an advantage over their competitors.          
+        </p>
+    </div>
+
+    <img class="mainimage" id="main-img" src="images/main.png" alt="Main" />
+    <input type="button" value="Start Now" id="start" />
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/slide1.png" style="width:100%" />
+        <div class="text">Business</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/slide2.jpg" style="width:100%" />
+        <div class="text">Information Technology</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/slide3.jpg" style="width:100%" />
+        <div class="text">Digital Technology</div>
+      </div>
+    </div>
+    <br />
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+
+    <div class="containerfoo">
+      <input type="submit" id="bt" class="btn4" value="Feedback" />
+      <input type="submit" id="btn" class="btn5" value="Contact Us" />
+      <img
+        src="images/facebook.png"
+        width="40px"
+        height="40px"
+        class="footbutt"
+      />
+      <img
+        src="images/twitter.png "
+        width="40px"
+        height="40px"
+        class="footbutt"
+      />
+      <img
+        src="images/linkedin.png"
+        width="40px"
+        height="40px"
+        class="footbutt"
+      />
+      <img src="images/email.png" width="40px" height="40px" class="footbutt" />
+    </div>
+  </body>
+</html>

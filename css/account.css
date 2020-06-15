@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+.prfileconta {
+  height: 700px;
+  width: 600px;
+  background-color: black;
+  margin-top: -150px;
+  opacity: 0.2;
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+}
+h1 {
+  font-size: 100px;
+}
+.profileim {
+  height: 100px;
+  margin-left: 320px;
+  transform: translateY(-750%);
+  position: relative;
+}
+.name {
+  margin-left: 301px;
+  transform: translateY(-1400%);
+  font-size: 40px;
+  position: relative;
+}
+.email {
+  margin-left: 100px;
+  margin-left: 301px;
+  transform: translateY(-1300%);
+  font-size: 40px;
+  position: relative;
+}
+.phone {
+  margin-left: 100px;
+  margin-left: 230px;
+  transform: translateY(-1200%);
+  font-size: 40px;
+  position: relative;
+  margin-bottom: -1200px;
+}
+.inbox {
+  width: 800px;
+  height: 400px;
+  float: right;
+  transform: translateY(15%);
+  margin-right: 100px;
+  position: relative;
+}
+.send {
+  width: 800px;
+  height: 400px;
+  float: right;
+  transform: translateY(15%);
+  margin-right: 100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+/*Slideshow*/
+@charset "UTF-8";
+
+/* Image Slider */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -100px;
+}
+
+/* Caption text */
+.text {
+  color: #242424;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number indicator text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 10px 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 10px;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Account</title>
+      <link rel="stylesheet " type="text/css" href="css/main.css">
+      <link rel="stylesheet " type="text/css" href="css/account.css">
+   </head>
+<body>
+  <div class="style2">
+    <img src="12.png" width="200px" height="200px" class="style3" />
+  </div>
+  <h1 class="style1">Online Help-Desk</h1>
+  <div class="navbar">
+    <a href="#home">Home</a>
+
+    <div class="drpdwn">
+      <button class="drpbtn">
+        Facilities
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="drpdwn-cont">
+        <a href="#">Bussiness</a>
+        <a href="#">Information Technology</a>
+        <a href="#">Digital Technology</a>
+      </div>
+    </div>
+
+    <a href="#account">Account</a>
+
+    <div class="drpdwn">
+      <button class="drpbtn">
+        Resource
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="drpdwn-cont">
+        <a href="#">Bussiness</a>
+        <a href="#">Information Technology</a>
+        <a href="#">Digital Technology</a>
+      </div>
+    </div>
+
+    <a href="#about us">About Us</a>
+  </div>
+
+<div class="prfileconta">
+</div>
+<img src="images/pro.png" class="profileim">
+
+<p class="name">Name</p>
+<p class="email">Email</>
+<p class="phone">Phone number</p>
+
+<from >
+  <fieldset class="inbox"> 
+    <legend><b>Inbox</b></legend>
+  </fieldset>
+</from>
+<br>
+<from >
+  <fieldset class="send"> 
+    <legend><b>Sent</b></legend>
+  </fieldset>
+</from>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="images/slide1.png" style="width:100%">
+  <div class="text">Business</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/slide2.jpg" style="width:100%">
+  <div class="text">Information Technology</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/slide3.jpg" style="width:100%">
+  <div class="text">Digital Technology</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+<div class="containerfoo">
+      <input type ="submit" id="bt" class="btn4" value="Feedback">
+      <input type="submit" id="btn" class="btn5" value="Contact Us">
+      <img src="images/facebook.png" width="40px" height="40px" class="footbutt">
+      <img src="images/twitter.png "width="40px" height="40px" class="footbutt">
+      <img src="images/linkedin.png" width="40px" height="40px" class="footbutt">
+      <img src="images/email.png" width="40px" height="40px" class="footbutt">
+     
+</div>
+
+</body>
+</html>
